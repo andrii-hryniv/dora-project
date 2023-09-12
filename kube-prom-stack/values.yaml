@@ -79,12 +79,4 @@ nodeSelector: {}
 
 tolerations: []
 
-prometheus:
-  additionalScrapeConfigs:
-    - job_name: 'argo-app'
-      scrape_interval: 5s
-      metrics_path: /metrics
-      kubernetes_sd_configs:
-        - role: pod
-
 affinity: {}
