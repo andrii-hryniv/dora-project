@@ -1,4 +1,6 @@
 redis:
+  exporter:
+    enabled: true
   metrics:
     enabled: true
     serviceMonitor:
