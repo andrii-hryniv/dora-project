@@ -79,17 +79,4 @@ nodeSelector: {}
 
 tolerations: []
 
-prometheus:
-    enabled: true
-    serviceMonitor:
-        enabled: true
-        namespace: prometheus
-        additionalLabels: {}
-        interval: 10s
-        scrapeTimeout: 10s
-        namespaceSelector:
-          matchNames:
-            - prometheus
-            - argocd
-
 affinity: {}
