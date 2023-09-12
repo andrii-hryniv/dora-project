@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/andrii-hryniv/dora-project.git'
-    path: devx-175
+    path: kube-prom-stack
     targetRevision: HEAD
     helm:
       valueFiles:
@@ -20,5 +20,6 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-    - CreateNamespace=true
+      - ServerSideApply=true
+      - CreateNamespace=true
 
