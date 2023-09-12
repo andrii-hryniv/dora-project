@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: devx-175
+  name: kube-prometheus-stack
   namespace: argocd
 spec:
   project: default
