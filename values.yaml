@@ -32,3 +32,11 @@ repoServer:
       namespace: prometheus
       additionalLabels:
         release: kube-prometheus-stack
+applicationSet:
+  metrics:
+    enabled: true
+    serviceMonitor:
+      enabled: true
+      namespace: prometheus
+      additionalLabels:
+          release: kube-prometheus-stack
